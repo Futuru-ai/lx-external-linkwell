@@ -1,5 +1,3 @@
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:linkwell/linkwell.dart';
 
@@ -20,7 +18,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({super.key, required this.title});
   final String title;
 
   @override
@@ -49,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 10,
                   ),
                   LinkWell(
-                    "Hi here's my email: samuelezedi@gmail.com and website: https://pronoun.com.ng",
+                    "Hi here's an email: someone@gmail.com and website: https://www.google.com",
                   )
                 ],
               ),
@@ -60,3 +58,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
